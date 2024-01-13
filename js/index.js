@@ -8,19 +8,10 @@
       openB = $('open'),
       closeB = $('close'),
       timer = null;
+      audio = new Audio('./your-audio-file.mp3');
   console.log('wat', card);
   openB.addEventListener('click', function () {
-    const audio = new Audio('Beautiful-In-White-Shayne.mp3');
-
-    // Function to play the audio
-    function playAudio() {
-      alert('abc');
-        audio.play();
-        // You can also add other actions here if needed
-    }
-
-    // Play the audio when the page is fully loaded
-    window.addEventListener('load', playAudio);
+    audio.play();
     card.setAttribute('class', 'open-half');
     if (timer) clearTimeout(timer);
     timer = setTimeout(function () {
@@ -30,6 +21,7 @@
   });
 
   closeB.addEventListener('click', function () {
+    audio.pause();
     card.setAttribute('class', 'close-half');
     if (timer) clearTimerout(timer);
     timer = setTimeout(function () {
