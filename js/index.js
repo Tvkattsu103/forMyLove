@@ -8,7 +8,7 @@
       openB = $('open'),
       closeB = $('close'),
       timer = null;
-      audio = new Audio('./your-audio-file.mp3');
+      audio = new Audio('./Beautiful-In-White-Shayne.mp3');
   console.log('wat', card);
   openB.addEventListener('click', function () {
     audio.play();
