@@ -3,6 +3,7 @@
 
   // Function to play the audio
   function playAudio() {
+    alert('abc');
       audio.play();
       // You can also add other actions here if needed
   }
