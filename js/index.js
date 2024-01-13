@@ -1,4 +1,14 @@
 (function() {
+  const audio = new Audio('Beautiful-In-White-Shayne.mp3');
+
+  // Function to play the audio
+  function playAudio() {
+      audio.play();
+      // You can also add other actions here if needed
+  }
+
+  // Play the audio when the page is fully loaded
+  window.addEventListener('load', playAudio);
   function $(id) {
     return document.getElementById(id);
   }
