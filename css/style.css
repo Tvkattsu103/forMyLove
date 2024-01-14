@@ -479,12 +479,8 @@ font-family: 'Lobster', cursive;
 }
 
 @media only screen and (max-width: 900px ) {
-  body {
-    background-image: url("bgd.jpg");
-  }
   #card { 
     width: 480px;
-    margin-top: 10px;
   }
   #card, #card-front, #card-inside {
     height: 290px;
